@@ -29,29 +29,31 @@ class _ForgotPasswordState extends State<ForgotPassword> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Enter your mobile number', style: TextStyles.title),
-              SizedBox(height: 7),
-              Text(
-                'We need to verify you. We will send you a one time verification code. ',
-                style: TextStyles.caption,
-              ),
-              SizedBox(height: 42),
-              PhoneFeild(hintText: '01xxxxxxxxx'),
-              SizedBox(height: 46),
-              MainButton(
-                onPressed: () {
-                  pushReplacementTo(context, VerificationScreen());
-                },
-                text: 'Next',
-                height: 58,
-                width: double.infinity,
-              ),
-              SizedBox(height: 24),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Enter your mobile number', style: TextStyles.title),
+                SizedBox(height: 7),
+                Text(
+                  'We need to verify you. We will send you a one time verification code. ',
+                  style: TextStyles.caption,
+                ),
+                SizedBox(height: 42),
+                PhoneFeild(hintText: '01xxxxxxxxx'),
+                SizedBox(height: 46),
+                MainButton(
+                  onPressed: () {
+                    pushReplacementTo(context, VerificationScreen());
+                  },
+                  text: 'Next',
+                  height: 58,
+                  width: double.infinity,
+                ),
+                SizedBox(height: 24),
+              ],
+            ),
           ),
         ),
       ),
