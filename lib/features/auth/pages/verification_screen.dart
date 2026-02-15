@@ -3,9 +3,7 @@ import 'package:greenmart/core/functions/navigations.dart';
 import 'package:greenmart/core/styles/colors.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/main_button.dart';
-import 'package:greenmart/core/widgets/phone_feld.dart';
 import 'package:greenmart/features/auth/pages/forgot_password_screen.dart';
-import 'package:greenmart/features/auth/widgets/otp_counter.dart';
 import 'package:pinput/pinput.dart';
 
 class VerificationScreen extends StatefulWidget {

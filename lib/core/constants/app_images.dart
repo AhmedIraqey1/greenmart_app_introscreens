@@ -1,5 +1,5 @@
 abstract class AppImages {
-  static const String apple = 'assets/images/apple.svg';
+  static const String apple = 'assets/images/apple.png';
   static const String banana = 'assets/images/banana.png';
   static const String bread = 'assets/images/bread.png';
   static const String appleGrapJuice = 'assets/images/appleGrapJuice.png';
@@ -16,4 +16,5 @@ abstract class AppImages {
   static const String soda = 'assets/images/soda.png';
   static const String sprite = 'assets/images/sprite.png';
   static const String vegtables = 'assets/images/vegtables.png';
+  static const String iraqey = 'assets/images/iraqey.jpg';
 }

@@ -4,7 +4,7 @@ import 'package:greenmart/core/constants/app_icons.dart';
 import 'package:greenmart/core/functions/navigations.dart';
 import 'package:greenmart/core/styles/colors.dart';
 import 'package:greenmart/core/styles/text_style.dart';
-import 'package:greenmart/core/widgets/input_feild.dart';
+import 'package:greenmart/core/widgets/Email_feild.dart';
 import 'package:greenmart/core/widgets/main_button.dart';
 import 'package:greenmart/core/widgets/passwordt_feild%20copy.dart';
 import 'package:greenmart/core/widgets/text_input_feild.dart';

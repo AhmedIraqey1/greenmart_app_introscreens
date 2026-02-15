@@ -4,11 +4,12 @@ import 'package:greenmart/core/constants/app_icons.dart';
 import 'package:greenmart/core/functions/navigations.dart';
 import 'package:greenmart/core/styles/colors.dart';
 import 'package:greenmart/core/styles/text_style.dart';
-import 'package:greenmart/core/widgets/input_feild.dart';
+import 'package:greenmart/core/widgets/Email_feild.dart';
 import 'package:greenmart/core/widgets/main_button.dart';
 import 'package:greenmart/core/widgets/passwordt_feild%20copy.dart';
 import 'package:greenmart/features/auth/pages/forgot_password_screen.dart';
 import 'package:greenmart/features/auth/pages/signup_screen.dart';
+import 'package:greenmart/features/main/main_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -83,7 +84,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   SizedBox(height: 30),
                   MainButton(
                     onPressed: () {
-                      if (formKey.currentState!.validate()) {}
+                      if (formKey.currentState!.validate()) {
+                        pushReplacementTo(context, MainScreen());
+                      }
                     },
                     text: 'Login',
                     height: 58,
