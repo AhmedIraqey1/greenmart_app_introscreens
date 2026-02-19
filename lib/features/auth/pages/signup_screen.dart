@@ -60,7 +60,7 @@ class Signup extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
 
-                InputFeild(hintText: 'Enter your email'),
+                EmailFeild(hintText: 'Enter your email'),
                 SizedBox(height: 20),
                 Text(
                   'Password',

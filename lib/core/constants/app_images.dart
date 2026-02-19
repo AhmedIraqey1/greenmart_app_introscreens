@@ -17,4 +17,5 @@ abstract class AppImages {
   static const String sprite = 'assets/images/sprite.png';
   static const String vegtables = 'assets/images/vegtables.png';
   static const String iraqey = 'assets/images/iraqey.jpg';
+  static const String appleBig = 'assets/images/appleBig.png';
 }

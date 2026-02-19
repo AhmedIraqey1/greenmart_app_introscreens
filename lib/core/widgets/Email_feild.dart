@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:greenmart/core/functions/Validations.dart';
 
-class InputFeild extends StatelessWidget {
-  const InputFeild({super.key, required this.hintText});
+class EmailFeild extends StatelessWidget {
+  const EmailFeild({super.key, required this.hintText});
   final String hintText;
 
   @override

@@ -21,4 +21,5 @@ abstract class AppIcons {
   static const String open = 'assets/icons/Vector 3.svg';
   static const String logout = 'assets/icons/logout.svg';
   static const String location = 'assets/icons/location.svg';
+  static const String export = 'assets/icons/export.svg';
 }

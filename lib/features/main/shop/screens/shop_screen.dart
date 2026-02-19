@@ -4,7 +4,9 @@ import 'package:greenmart/core/functions/navigations.dart';
 import 'package:greenmart/core/styles/colors.dart';
 import 'package:greenmart/core/styles/text_style.dart';
 import 'package:greenmart/core/widgets/custom_svg_picture.dart';
+import 'package:greenmart/features/main/explore/screens/soda_screen.dart';
 import 'package:greenmart/features/main/search/screens/search_screen.dart';
+import 'package:greenmart/features/main/shop/data/product_model.dart';
 import 'package:greenmart/features/main/shop/widgets/list_view_widgit.dart';
 
 class ShopScreen extends StatefulWidget {
@@ -71,19 +73,29 @@ class _ShopScreenState extends State<ShopScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text('Exclusive Offer', style: TextStyles.title),
-                    TextButton(onPressed: () {}, child: Text('See all')),
+                    TextButton(
+                      onPressed: () {
+                        pushTo(context, SodaScreen());
+                      },
+                      child: Text('See all'),
+                    ),
                   ],
                 ),
-                ListViewWidget(),
+                ListViewWidget(list: offers),
                 SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text('Best Selling', style: TextStyles.title),
-                    TextButton(onPressed: () {}, child: Text('See all')),
+                    TextButton(
+                      onPressed: () {
+                        pushTo(context, SodaScreen());
+                      },
+                      child: Text('See all'),
+                    ),
                   ],
                 ),
-                ListViewWidget(),
+                ListViewWidget(list: bestSelling),
               ],
             ),
           ),

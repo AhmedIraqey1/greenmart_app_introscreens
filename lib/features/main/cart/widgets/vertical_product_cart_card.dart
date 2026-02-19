@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:greenmart/core/constants/app_icons.dart';
 import 'package:greenmart/core/styles/colors.dart';
 import 'package:greenmart/core/styles/text_style.dart';
+import 'package:greenmart/core/widgets/counter.dart';
 import 'package:greenmart/features/main/cart/widgets/container_button.dart';
 
 class VerticalProductCartCard extends StatelessWidget {
@@ -42,23 +43,7 @@ class VerticalProductCartCard extends StatelessWidget {
                       color: AppColors.iconsColor,
                     ),
                   ),
-                  Row(
-                    spacing: 15,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ContainerButton(
-                        borderColor: const Color.fromARGB(166, 167, 165, 165),
-                        iconColor: AppColors.iconsColor,
-                        icon: Icons.remove,
-                      ),
-                      Text('$productNum', style: TextStyles.body),
-                      ContainerButton(
-                        borderColor: AppColors.primary,
-                        iconColor: AppColors.primary,
-                        icon: Icons.add,
-                      ),
-                    ],
-                  ),
+                  Counter(productNum: productNum),
                 ],
               ),
             ],

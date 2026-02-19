@@ -3,7 +3,8 @@ import 'package:greenmart/core/widgets/product_card.dart';
 import 'package:greenmart/features/main/shop/data/product_model.dart';
 
 class ListViewWidget extends StatelessWidget {
-  const ListViewWidget({super.key});
+  const ListViewWidget({super.key, required this.list});
+  final List list;
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +14,11 @@ class ListViewWidget extends StatelessWidget {
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          var model = offers[index];
+          var model = list[index];
           return ProductCard(model: model);
         },
         separatorBuilder: (context, index) => SizedBox(width: 0),
-        itemCount: offers.length,
+        itemCount: list.length,
       ),
     );
   }
